@@ -1,5 +1,6 @@
 class MyHashMap {
     vector<vector<pair<int,int>>>v;
+    // v[hashidx]={key,val}
     int bl;
 
     int hash(int key)
