@@ -24,12 +24,12 @@ class DSU
         if(size[u]<size[v])
         {
             par[u]=v;
-            size[v]+=1;
+            size[v]+=size[u];
         }
         else
         {
             par[v]=u;
-            size[u]+=1;
+            size[u]+=size[v];
         }
     }
     int findpar(int i)
